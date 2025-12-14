@@ -12,20 +12,22 @@ class ResourceRepository {
         id: 'asset_svg',
         source: 'assets/images/icon.svg',
         type: ResourceType.svg,
-        description: 'Vector asset – ideal for icons and small illustrations.',
+        description:
+            'Recurso vectorial (SVG) – ideal para íconos e ilustraciones sin perder calidad.',
       ),
       Resource(
         id: 'local_image',
         source: 'https://picsum.photos/seed/local/800/600',
         type: ResourceType.network,
-        description: 'Remote raster image; demonstrate caching and downscaling.',
+        description:
+            'Imagen remota estándar: demuestra el uso de caché y redimensionamiento.',
       ),
       Resource(
         id: 'large_image',
         source: 'https://picsum.photos/seed/large/1200/900',
         type: ResourceType.network,
         description:
-            'Large remote image: used to show cacheWidth/cacheHeight and memory impact.',
+            'Imagen remota grande: útil para observar el impacto en memoria y los tiempos de carga.',
       ),
     ];
   }
